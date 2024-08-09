@@ -1,3 +1,7 @@
+import '@/app/ui/global.css';
+import { vazirFont } from '@/app/ui/font';
+
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +9,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      {/* <body>{children}</body> */}
+      <body className={`${vazirFont.className} antialiased`}>{children}</body>
     </html>
   );
 }
